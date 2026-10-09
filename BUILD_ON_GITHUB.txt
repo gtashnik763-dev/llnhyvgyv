@@ -1,0 +1,9 @@
+HOW TO BUILD APK ONLINE WITHOUT ANDROID STUDIO
+
+1. Sign in at https://github.com and create a new repository (private is fine).
+2. Unzip this project; upload the CONTENTS of the PovitryanaVartaAndroid folder to the root of your GitHub repository, including the .github directory. In the browser, hidden folders may be harder to drag, so check .github/workflows/build-apk.yml is uploaded. Alternatively create that file in GitHub's editor and paste its content.
+3. Open the Actions tab, select "Build Android APK" and click "Run workflow". A push to main or master should also start it automatically.
+4. When the workflow finishes successfully, open its run and download artifact "PovitryanaVarta-APK".
+5. Unzip the artifact and install app-debug.apk on an Android device.
+
+NOTE: GitHub Actions needs an online account. The APK is a debug build signed automatically by Android tooling; it is intended for personal installation, not Play Store publication. The site itself needs internet. Screenshot support has not been tested.
