@@ -1,0 +1,12 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'ua.pp.povitryanavarta.radar'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'ua.pp.povitryanavarta.radar'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+}
